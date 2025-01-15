@@ -1,4 +1,6 @@
-<p align="center"><img src="https://github.com/user-attachments/assets/509d8212-8b84-4f9c-ade5-a16bf21061f7" width="250" height="200"></p>
+<p align="center"><img src="https://github.com/user-attachments/assets/509d8212-8b84-4f9c-ade5-a16bf21061f7" width="250" height="200"><br>
+<a href="https://www.proxmox.com/en/products/proxmox-virtual-environment/overview">Proxmox VE</a> | <a href="https://www.debian.org/">Debian</a> | <a href="https://nextcloud.com/">Nextcloud</a> | <a href="https://www.cloudflare.com/">Cloudflare</a>
+</p>
 
 # Personal Cloud via Nextcloud in an LXC w/ Proxmox VE
 
