@@ -1,4 +1,4 @@
-<p align="center"><img src="https://github.com/user-attachments/assets/f6f41422-70ef-49d0-8251-3612e762ad80" width="250" height="200"></p>
+<p align="center"><img src="https://github.com/user-attachments/assets/509d8212-8b84-4f9c-ade5-a16bf21061f7" width="250" height="200"></p>
 
 # Personal Cloud via Nextcloud in an LXC w/ Proxmox VE
 
