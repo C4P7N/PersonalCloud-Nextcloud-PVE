@@ -13,7 +13,7 @@ Debian<br>
 Apache<br>
 MariaDB<br>
 Nextcloud<br>
-SSL
+Cloudflare Tunnel
 
 ### Why would I use Nextcloud and Proxmox?
   Nextcloud is an open source client and server software that allows you to host your own collaboration efforts without relying on third party options. From file hosting, an office suite, chat and more, Nextcloud is like having your own self-hosted GSuite or Microsoft Teams where you're in full control. Hosting Nextcloud on our own Proxmox server furthers that control and eliminates any reliance on third parties. Nextcloud on PVE gives us full control on how our files are kept without the worry of a third party getting involved potentially shutting us down without reason or misusing our content for whatever their many reasons may be.<br>
