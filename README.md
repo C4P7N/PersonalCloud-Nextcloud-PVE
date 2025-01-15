@@ -107,3 +107,37 @@ We should now be able to access Nextcloud's WebUI to finish up our install.<br>
 - Below this we're asked our database information. From here go ahead and fill in the information of the database we created earlier.<br>  
 - And now after hitting next our Nextcloud service is now installed. From here you can pick which add-ons you want. Don't select any and you'll have just your file storage.<br>
 </details>
+<details>
+  <summary>Enabling Internet Access using a Cloudflare Tunnel</summary>
+$\textcolor{red}{\textsf{In order to accomplish this step, you must have your own Domain name.}}$<br>
+This step will require you to have your own domain name, you can use a variety of registrars, or you could use cloudflare itself. However if you're using a registrar other than cloudflare you'll need to configure your domain to work with cloudflare. This should be easy to accomplish by using your cloudflare dashboard, on the homescreen of your dashboard you should see a button "Add a domain" this will guide you through the process.<br>
+
+### Setting up cloudflare
+- First, if you haven't already, create an account for <a href="cloudflare.com">Cloudflare.</a><br>
+- Next, on our account home if you haven't already Add a domain.<br>
+- Once we have a domain on our cloudflare account, on the left of the dashboard home click on Zero Trust.<br>
+- Next click on Networks.<br>
+- Then click on Tunnels if it isn't up already.<br>
+- On this page click on the button "+ Create a tunnel"<br>
+- Select your tunnel type, pick Cloudflared.<br>
+- Give your tunnel a name, Nextcloud should suffice.<br>
+- Now we need to install and run a connector. Copy the text under "If you don’t have cloudflared installed on your machine:"<br>
+- Head on over to your Proxmox VE's WebUI and access the console of your Nextcloud's LXC.<br>
+- Paste the command into the console and hit enter.<br>
+- Next set the domain name you want your Nextcloud server to have, and set the type to http with the url 127.0.0.1/ and save the tunnel.<br>
+- Now try and access the domain you just setup. You should be greeted by your Nextcloud server with a message saying access from untrusted domain. We'll tackle that next.<br>
+<br>
+### Adding a Trusted Domain to Nextcloud<br>
+Now we need to add our domain to Nextcloud's trusted domains list.<br>
+- In your Nextcloud's LXC console enter this command: <code>nano /var/www/nextcloud/config/config.php</code><br>
+- In this config file we'll add a second trusted domain by adding: 1 => 'your.domain.name',  <br>
+- The config should look similar to the below image.
+<img src="https://github.com/user-attachments/assets/74f061df-6c4a-4afa-a8a1-b3aa574cb10d">
+- after config is set, hit ctrl + x then y to save and exit.
+- You should now be able to access Nextcloud from the new domain.
+</details>
+
+# Moving Forward
+From here you can check out the other capabilities of Nextcloud through the various apps offered for Nextcloud. You can find them by clicking on your user icon in the top right of the Nextcloud dashboard and clicking Apps.<br>
+Don't forget to check out their <a href="https://nextcloud.com/install/#install-clients">client software</a> as well! Available on a variety of desktop and mobile platforms.<br>
+If you're ever stumped be sure to also check out their docs: <a href="https://docs.nextcloud.com/server/30/admin_manual/index.html">docs.nextcloud.com</a>
