@@ -2,7 +2,7 @@
 <a href="https://www.proxmox.com/en/products/proxmox-virtual-environment/overview">Proxmox VE</a> | <a href="https://www.debian.org/">Debian</a> | <a href="https://nextcloud.com/">Nextcloud</a> | <a href="https://www.cloudflare.com/">Cloudflare</a>
 </p>
 
-# Personal Cloud via Nextcloud in an LXC w/ Proxmox VE
+# Personal Cloud via Nextcloud in an LXC on Proxmox VE
 
 #### $\textcolor{red}{\textsf{This guide assumes you already have Proxmox VE installed.}}$
 
