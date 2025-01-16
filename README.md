@@ -131,10 +131,10 @@ This step will require you to have your own domain name, you can use a variety o
 Now we need to add our domain to Nextcloud's trusted domains list.<br>
 - In your Nextcloud's LXC console enter this command: <code>nano /var/www/nextcloud/config/config.php</code><br>
 - In this config file we'll add a second trusted domain by adding: 1 => 'your.domain.name',  <br>
-- The config should look similar to the below image.
-<img src="https://github.com/user-attachments/assets/74f061df-6c4a-4afa-a8a1-b3aa574cb10d">
-- after config is set, hit ctrl + x then y to save and exit.
-- You should now be able to access Nextcloud from the new domain.
+- The config should look similar to the below image.<br>
+<img src="https://github.com/user-attachments/assets/74f061df-6c4a-4afa-a8a1-b3aa574cb10d"><br>
+- after config is set, hit ctrl + x then y to save and exit.<br>
+- You should now be able to access Nextcloud from the new domain.<br>
 </details>
 
 # Moving Forward
