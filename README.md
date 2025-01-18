@@ -57,9 +57,9 @@ We can start with this command to download all the packeges we'll need:
   apt install -y apache2 mariadb-server libapache2-mod-php php-gd php-json php-mysql php-curl php-intl php-mbstring php-imagick php-xml php-zip php-bcmath php-apcu php-redis
 </code>
 Now we can download and unzip the latest version of Nextcloud. Check for the latest <a href="https://download.nextcloud.com/server/releases/">here</a>. Currently the latest is 30. <br>
-Change directory to /var/www/ <code>cd /var/www/</code> <br>
-Use wget to download: <code>wget https://download.nextcloud.com/server/releases/latest-30.zip</code> <br>
-Unzip with: <code>unzip latest-30.zip</code>
+- Change directory to /var/www/ <code>cd /var/www/</code> <br>
+- Use wget to download: <code>wget https://download.nextcloud.com/server/releases/latest-30.zip</code> <br>
+- Unzip with: <code>unzip latest-30.zip</code>
 </details>
 <details>
 <summary>Setting Up MariaDB</summary>
@@ -127,10 +127,10 @@ This step will require you to have your own domain name, you can use a variety o
 - Next set the domain name you want your Nextcloud server to have, and set the type to http with the url 127.0.0.1/ and save the tunnel.<br>
 - Now try and access the domain you just setup. You should be greeted by your Nextcloud server with a message saying access from untrusted domain. We'll tackle that next.<br>
 <br>
-### Adding a Trusted Domain to Nextcloud<br>
+<h3>Adding a Trusted Domain to Nextcloud</h3><br>
 Now we need to add our domain to Nextcloud's trusted domains list.<br>
 - In your Nextcloud's LXC console enter this command: <code>nano /var/www/nextcloud/config/config.php</code><br>
-- In this config file we'll add a second trusted domain by adding: 1 => 'your.domain.name',  <br>
+- In this config file we'll add a second trusted domain by adding: <code>1 => 'your.domain.name',</code>  <br>
 - The config should look similar to the below image.<br>
 <img src="https://github.com/user-attachments/assets/74f061df-6c4a-4afa-a8a1-b3aa574cb10d"><br>
 - after config is set, hit ctrl + x then y to save and exit.<br>
