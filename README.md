@@ -137,6 +137,40 @@ Now we need to add our domain to Nextcloud's trusted domains list.<br>
 - You should now be able to access Nextcloud from the new domain.<br>
 </details>
 
+# Using Nextcloud
+<details>
+  <summary>Logging In</summary>
+  
+
+https://github.com/user-attachments/assets/1c1d0b59-2424-4604-90fe-ebff6f89e8a6
+
+
+</details>
+<details>
+  <summary>Accessing Files</summary>
+  
+
+https://github.com/user-attachments/assets/376fe78b-2331-46fa-a6bc-4579cf9c5902
+
+
+</details>
+<details>
+  <summary>Uploading Files</summary>
+  
+
+https://github.com/user-attachments/assets/fb43b4f2-97e7-43b1-acbf-1474cb073685
+
+
+</details>
+<details>
+  <summary>Adding Apps</summary>
+  
+
+https://github.com/user-attachments/assets/a9583005-7d0f-43eb-9827-9c004fab57c2
+
+
+</details>
+
 # Moving Forward
 From here you can check out the other capabilities of Nextcloud through the various apps offered for Nextcloud. You can find them by clicking on your user icon in the top right of the Nextcloud dashboard and clicking Apps.<br>
 Don't forget to check out their <a href="https://nextcloud.com/install/#install-clients">client software</a> as well! Available on a variety of desktop and mobile platforms.<br>
